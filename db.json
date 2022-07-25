@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "img": "adacsc",
+      "likes": "ad",
+      "descr": "ad",
+      "id": 1
+    },
+    {
+      "img": "fb",
+      "likes": "bf",
+      "descr": "bfb",
+      "id": 2
+    }
+  ]
+}

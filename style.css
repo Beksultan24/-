@@ -1,0 +1,19 @@
+/* .page1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#img-beks {
+  width: 400px;
+  height: 400px;
+}
+
+#ava-beks {
+  width: 35px;
+} */
+
+.make-post {
+  display: flex;
+  justify-content: space-between;
+}
