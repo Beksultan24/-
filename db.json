@@ -1,16 +1,11 @@
 {
   "posts": [
     {
-      "img": "adacsc",
-      "likes": "ad",
-      "descr": "ad",
+      "img1": "https://pixelbox.ru/wp-content/uploads/2021/02/mult-ava-instagram-76-150x150.jpg",
+      "img2": "https://popmellow.com/wp-content/uploads/2021/09/AVA-MAX-Sexy-Photos-on-Internet-18.webp",
+      "likes": "27 отметок нравится",
+      "descr": "#бла#бла",
       "id": 1
-    },
-    {
-      "img": "fb",
-      "likes": "bf",
-      "descr": "bfb",
-      "id": 2
     }
   ]
 }
