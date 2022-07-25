@@ -4,6 +4,7 @@ const API = "http://localhost:8000/posts";
 
 let img1 = document.querySelector("#img1");
 let img2 = document.querySelector("#img2");
+let name = document.querySelector("#name");
 let likes = document.querySelector("#likes");
 let descr = document.querySelector("#descr");
 let btnAdd = document.querySelector("#btn-add");
@@ -11,6 +12,7 @@ let btnAdd = document.querySelector("#btn-add");
 // ? переменные для инпутов (для редактирования постов)
 let editImg1 = document.querySelector("#edit-Img1");
 let editImg2 = document.querySelector("#edit-Img2");
+let editName = document.querySelector("#edit-name");
 let editLikes = document.querySelector("#edit-likes");
 let editDescr = document.querySelector("#edit-descr");
 let btnSaveEdit = document.querySelector("#btn-save-edit");
@@ -23,6 +25,7 @@ btnAdd.addEventListener("click", async () => {
   let obj = {
     img1: img1.value,
     img2: img2.value,
+    name: name.value,
     likes: likes.value,
     descr: descr.value,
   };
@@ -31,6 +34,7 @@ btnAdd.addEventListener("click", async () => {
   if (
     !obj.img1.trim() ||
     !obj.img2.trim() ||
+    !obj.name.trim() ||
     !obj.likes.trim() ||
     !obj.descr.trim()
   ) {
@@ -49,6 +53,7 @@ btnAdd.addEventListener("click", async () => {
 
   img1.value = "";
   img2.value = "";
+  name.value = "";
   descr.value = "";
   likes.value = "";
   render();
@@ -74,17 +79,18 @@ async function render() {
     // </div>`;
     // list.append(newElem);
 
-    newElem.innerHTML = `<div class="card m-5" style="width: 24rem">
+    newElem.innerHTML = `<div class="card mt-5" style="width: 24.5rem">
+        <div class="icon-div">
           <img
             id="ava-beks"
             src=${element.img1}
             alt=""
-            class="card-img-top"
+            class="card-img-top-5"><p id="name1">${element.name}</p>
         </div>
-
+       
         <img
           class="card-img-top-bottom"
-          id="img-beks img-thumbnail"
+          id="img-beks"
           src=${element.img2}
           alt="Card image cap"
         />
@@ -127,6 +133,7 @@ document.addEventListener("click", (e) => {
       .then((data) => {
         editImg1.value = data.img1;
         editImg2.value = data.img2;
+        editName.value = data.name;
         editLikes.value = data.likes;
         editDescr.value = data.descr;
         btnSaveEdit.setAttribute("id", data.id);
@@ -137,16 +144,18 @@ document.addEventListener("click", (e) => {
 // ? кнопка из модалки для  сохранения изменений
 
 btnSaveEdit.addEventListener("click", (e) => {
-  console.log(e.target.id);
+  //   console.log(e.target.id);
   let id = e.target.id;
   let img1 = editImg1.value;
   let img2 = editImg2.value;
+  let name = editName.value;
   let likes = editLikes.value;
   let descr = editDescr.value;
 
   let edittedProduct = {
     img1: img1,
     img2: img2,
+    name: name,
     likes: likes,
     descr: descr,
   };
