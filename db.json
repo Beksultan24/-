@@ -1,13 +1,6 @@
 {
   "posts": [
     {
-      "img1": "https://pixelbox.ru/wp-content/uploads/2021/02/mult-ava-instagram-76-150x150.jpg",
-      "img2": "https://popmellow.com/wp-content/uploads/2021/09/AVA-MAX-Sexy-Photos-on-Internet-18.webp",
-      "likes": "27 отметок нравится",
-      "descr": "#бла#бла",
-      "id": 1
-    },
-    {
       "img1": "https://cdn.dribbble.com/users/230875/screenshots/15454050/media/02c37446fc9f090383d14e1b6bcc448c.jpg?compress=1&resize=1200x900&vertical=top",
       "img2": "https://cdn.dribbble.com/users/230875/screenshots/14485254/media/2194f80b38ecf695fe3d149bfb78c32e.jpg?compress=1&resize=1200x900&vertical=top",
       "name": "dribbble",
@@ -20,16 +13,8 @@
       "img2": "https://cdn.dribbble.com/users/230875/screenshots/11171483/media/61a882515a6bf6072107cc201f99ab8e.jpg?compress=1&resize=1200x900&vertical=top",
       "name": "dribble",
       "likes": "❤️29999 отметок нравится",
-      "descr": "14 часов назад                                                                                                   коментарии...",
+      "descr": "12 часов назад                                                                                            ",
       "id": 4
-    },
-    {
-      "img1": "https://cdn.dribbble.com/users/230875/screenshots/12215958/media/2c74bf1cf56023f67dc73f94fcb1b62b.jpg?compress=1&resize=1200x900&vertical=top",
-      "img2": "https://cdn.dribbble.com/users/230875/screenshots/11112699/media/1d49345d4b0842eeb14e55fdecf7a263.jpg?compress=1&resize=1200x900&vertical=top",
-      "name": "dribbble",
-      "likes": "❤️12000 отметок нравится",
-      "descr": "9 часов назад ",
-      "id": 5
     }
   ]
 }

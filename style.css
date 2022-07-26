@@ -20,7 +20,9 @@ body {
   width: 100%;
   position: fixed;
   z-index: 10000 !important;
-  background-color: rgb(248, 245, 245);
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid silver;
+  border-radius: 20px;
 }
 
 #ava-beks {
@@ -76,4 +78,9 @@ body {
 
 .nav-item {
   margin-left: 30px;
+}
+
+#search {
+  background-color: rgb(227, 227, 227);
+  border-radius: 13px;
 }
