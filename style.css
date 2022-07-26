@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(255, 225, 189);
+}
+
 .make-post {
   display: flex;
   justify-content: space-between;
@@ -7,22 +11,20 @@
   margin-left: 130px;
 }
 
-#icon {
-  font-family: "billabong", sans-serif;
-  margin-left: 10px;
-}
-
 .img-icon {
   width: 30px;
   margin-right: 5px;
 }
 
 #navbar {
+  width: 100%;
+  position: fixed;
   z-index: 10000 !important;
+  background-color: rgb(248, 245, 245);
 }
 
 #ava-beks {
-  width: 11.5% !important;
+  width: 12% !important;
   height: 47px;
   border-radius: 30px;
   margin-top: 4px;
@@ -44,10 +46,34 @@
 #name1 {
   margin-top: 15px;
   margin-left: 10px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 #admin {
   margin-top: 95px;
   margin-left: 250px;
   position: fixed;
+}
+
+.home-icon {
+  width: 30px;
+}
+
+.heart-icon {
+  width: 30px;
+  margin-right: 360px;
+}
+
+.add-icon {
+  width: 30px;
+  margin-right: 23px;
+}
+
+#search-btn {
+  margin-left: 200px;
+}
+
+.nav-item {
+  margin-left: 30px;
 }

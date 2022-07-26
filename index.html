@@ -15,25 +15,87 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between position-fixed w-100" id="navbar">
-      <a class="navbar-brand" id="icon" href="#"><img class="img-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="" >Instagram</a>
-    
 
-        <form class="form-inline my-2 my-lg-0 d-flex ">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-          />
-          <button class="btn btn-outline- my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="img-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="" >Instagram</a>
+        <!-- <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"
+                      ><img
+                        class="home-icon"
+                        src="https://img.icons8.com/fluency-systems-regular/344/home.png"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="#"
+                    ><img
+                      class="add-icon"
+                      src="https://img.icons8.com/ios/344/plus-2-math.png"
+                      alt=""
+                  /></a>
+                </li>
+                  
+                </li>
+                <a class="nav-link" href="#"
+                ><img
+                  class="heart-icon"
+                  src="https://img.icons8.com/windows/344/filled-heart.png"
+                  alt=""
+              /></a>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul> -->
+          <form class="d-flex" role="search" id="search-btn">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
     </nav>
 
-<br>
-<br>
+    <br />
+    <br />
 
     <div class="make-post">
       <!-- ? start content -->
@@ -41,7 +103,10 @@
       <!-- ? end content -->
 
       <!-- ? admin panel -->
-      <div class="w-100 d-flex flex-column flex-wrap align-items-center" id="admin">
+      <div
+        class="w-100 d-flex flex-column flex-wrap align-items-center"
+        id="admin"
+      >
         <h2>ADMIN PANEL</h2>
         <input
           type="text"
@@ -58,11 +123,11 @@
         />
 
         <input
-        type="text"
-        id="name"
-        placeholder="name"
-        class="form-contorl w-20 mb-2"
-      />
+          type="text"
+          id="name"
+          placeholder="name"
+          class="form-contorl w-20 mb-2"
+        />
 
         <input
           type="text"
@@ -122,11 +187,11 @@
               />
 
               <input
-              type="text"
-              id="edit-name"
-              placeholder="name"
-              class="form-contorl w-20 mb-2"
-            />
+                type="text"
+                id="edit-name"
+                placeholder="name"
+                class="form-contorl w-20 mb-2"
+              />
 
               <input
                 type="text"

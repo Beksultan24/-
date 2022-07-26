@@ -20,6 +20,10 @@ let btnSaveEdit = document.querySelector("#btn-save-edit");
 // ? блок куда добовляются карточки с постами
 let list = document.querySelector("#post-list");
 
+// ? search инпут в навбаре для поиска товаров
+let searchInp = document.querySelector("#search");
+let searchVal = "";
+
 btnAdd.addEventListener("click", async () => {
   // собираем обьект для добавления в json-server
   let obj = {
@@ -61,7 +65,7 @@ btnAdd.addEventListener("click", async () => {
 
 // ? Отображение
 async function render() {
-  let post = await fetch(`${API}`).then((res) => res.json());
+  let post = await fetch(`${API}?q=${searchVal}`).then((res) => res.json());
 
   list.innerHTML = "";
 
@@ -173,3 +177,10 @@ async function saveEdit(edittedProduct, id) {
   });
   render();
 }
+
+// ? поиск
+searchInp.addEventListener("input", () => {
+  searchVal = searchInp.value; // записываем значение поисковика в переменную searchVal
+
+  render();
+});
