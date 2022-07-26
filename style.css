@@ -26,8 +26,8 @@ body {
 }
 
 #ava-beks {
-  width: 12% !important;
-  height: 47px;
+  width: 11% !important;
+  height: 40px;
   border-radius: 30px;
   margin-top: 4px;
   margin-left: 8px;
@@ -60,11 +60,12 @@ body {
 
 .home-icon {
   width: 30px;
+  margin-left: 30px;
 }
 
 .heart-icon {
   width: 30px;
-  margin-right: 360px;
+  margin-right: 1px;
 }
 
 .add-icon {
@@ -73,14 +74,30 @@ body {
 }
 
 #search-btn {
-  margin-left: 200px;
+  margin-left: 450px;
 }
 
 .nav-item {
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 #search {
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(241, 240, 240);
   border-radius: 13px;
+  width: 300px;
+}
+
+.insta {
+  width: 130px;
+}
+
+#input {
+  margin-left: 10px;
+}
+
+.ava-icon {
+  width: 85%;
+  border-radius: 40px;
+  height: 35px;
+  margin-left: 17px;
 }
